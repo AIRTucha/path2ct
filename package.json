@@ -1,7 +1,7 @@
 {
   "name": "path2ct",
   "version": "0.1.2",
-  "description": "",
+  "description": "Lookups correct MIME content-type for specified path and return it as a string",
   "main": "./dist/index.js",
   "scripts": {
     "prepack": "npm run build",

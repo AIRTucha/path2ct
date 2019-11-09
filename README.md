@@ -11,7 +11,7 @@ It consists of three pure functions which can be used to quickly get file extens
 ## API
 
 ```typescript
-getContentType: path: string) => string | undefined
+getContentType: ( path: string) => string | undefined
 ```
 
 Lookups correct MIME content-type for specified path and return it as a string. If extension can not be identified returns undefined.
