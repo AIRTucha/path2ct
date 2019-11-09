@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { getExtension, getContentType, mbGetContentType as getContentTypeMaybe } from '../src/index'
+import { getExtension, getContentType, getContentTypeMaybe } from '../src/index'
 import { Just, None } from 'amonad'
 
 describe("getExtension", () => {
