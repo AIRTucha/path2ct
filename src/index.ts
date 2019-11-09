@@ -1,5 +1,8 @@
 import { Maybe } from "amonad"
 
+/**
+ * Known MIME types
+ */
 const typeMap = new Map([
   ["3dm", "x-world/x-3dmf"],
   ["3dmf", "x-world/x-3dmf"],
@@ -457,11 +460,19 @@ const typeMap = new Map([
   ["zsh", "text/x-script.zsh"],
 ])
 
+/**
+ * @param path Local path to the file
+ * @returns Extension of the file or undefined
+ */
 export const getExtension = (path: string) => {
   const indexOfLasDot = (path.lastIndexOf(".") - 1 >>> 0) + 2
   return indexOfLasDot < path.length ? path.slice(indexOfLasDot) : undefined
 }
 
+/**
+ * @param path Local path to the file
+ * @returns MIME type corresponend to the file or undefined
+ */
 export const getContentType = (path: string) => {
   const ext = getExtension(path)
   return ext ? typeMap.get(ext) : undefined
@@ -469,6 +480,10 @@ export const getContentType = (path: string) => {
 
 const ext2ct = (ext: string) => Maybe(typeMap.get(ext))
 
-export const mbGetContentType = (path: string) =>
+/**
+ * @param path Local path to the file
+ * @returns Just of MIME type corresponend to the file or None
+ */
+export const getContentTypeMaybe = (path: string) =>
   Maybe(getExtension(path))
     .bind(ext2ct)
