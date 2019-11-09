@@ -1,5 +1,5 @@
 # Path to content-type 
-
+[![Build Status](https://travis-ci.org/AIRTucha/path2ct.svg?branch=master)](https://travis-ci.org/AIRTucha/path2ct)[![Coverage Status](https://coveralls.io/repos/github/AIRTucha/path2ct/badge.svg?branch=master)](https://coveralls.io/github/AIRTucha/path2ct?branch=master)
 ## Get started 
 
 The package is available via npm. It has to be installed as a local dependency:
