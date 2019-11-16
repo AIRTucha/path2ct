@@ -4,7 +4,7 @@
 
 The package is available via npm. It has to be installed as a local dependency:
 
-npm install amonad
+npm install path2ct
 
 It consists of three pure functions which can be used to quickly get file extension or corespondent content type from a path.
 
