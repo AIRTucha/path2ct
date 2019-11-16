@@ -1,6 +1,6 @@
 {
   "name": "path2ct",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lookups correct MIME content-type for specified path and return it as a string",
   "main": "./dist/index.js",
   "scripts": {
